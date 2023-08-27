@@ -3,40 +3,84 @@ const popup = document.getElementById("popup");
 const resultsContainer = document.getElementById("results");
 const questions = [
   {
-    question: "Chocolat ou Vanille ?",
+    question: "Séries TV ou films?",
+    option1: "Séries TV",
+    option2: "Films",
+  },
+  {
+    question: "À emporter ou manger sur place?",
+    option1: "À emporter",
+    option2: "Manger sur place",
+  },
+  {
+    question: "Temps chaud ou froid?",
+    option1: "Chaud",
+    option2: "Froid",
+  },
+  {
+    question: "Douche ou bain?",
+    option1: "Douche",
+    option2: "Bain",
+  },
+  {
+    question: "Appeler ou envoyer un SMS?",
+    option1: "Appeler",
+    option2: "SMS",
+  },
+  {
+    question: "Glace au chocolat ou à la vanille?",
     option1: "Chocolat",
     option2: "Vanille",
   },
-  { question: "Montagne ou Plage ?", option1: "Montagne", option2: "Plage" },
   {
-    question: "Thé ou Café ?",
+    question: "Vivre en 1969 ou en 2069?",
+    option1: "1969",
+    option2: "2069",
+  },
+  {
+    question: "Chute de neige la nuit ou pluie le matin?",
+    option1: "Chute de neige la nuit",
+    option2: "Pluie le matin",
+  },
+  {
+    question: "Chien ou chat?",
+    option1: "Chien",
+    option2: "Chat",
+  },
+  {
+    question: "Été ou hiver?",
+    option1: "Été",
+    option2: "Hiver",
+  },
+  {
+    question: "Océan ou montagnes?",
+    option1: "Océan",
+    option2: "Montagnes",
+  },
+  {
+    question: "Matin ou soir?",
+    option1: "Matin",
+    option2: "Soir",
+  },
+  {
+    question: "Thé ou café?",
     option1: "Thé",
     option2: "Café",
   },
   {
-    question: "Plage ou Montagne ?",
-    option1: "Plage",
-    option2: "Montagne",
+    question: "Jouer dehors ou créer une forteresse de couvertures?",
+    option1: "Jouer dehors",
+    option2: "Forteresse de couvertures",
   },
   {
-    question: "Chien ou Chat ?",
-    option1: "Chien",
-    option2: "Chat",
+    question: "Côté gauche ou droit du lit?",
+    option1: "Gauche",
+    option2: "Droit",
   },
   {
     question: "Livres ou Films ?",
     option1: "Livres",
     option2: "Films",
-  },
-  {
-    question: "Été ou Hiver ?",
-    option1: "Été",
-    option2: "Hiver",
-  },
-  {
-    question: "Ville ou Campagne ?",
-    option1: "Ville",
-    option2: "Campagne",
   },
   {
     question: "Pizza ou Pasta ?",
@@ -54,29 +98,9 @@ const questions = [
     option2: "Restaurant",
   },
   {
-    question: "Marcher ou Courir ?",
-    option1: "Marcher",
-    option2: "Courir",
-  },
-  {
-    question: "Natation ou Gymnastique ?",
-    option1: "Natation",
-    option2: "Gymnastique",
-  },
-  {
     question: "Musique ou Podcasts ?",
     option1: "Musique",
     option2: "Podcasts",
-  },
-  {
-    question: "Voyage en train ou en avion ?",
-    option1: "Train",
-    option2: "Avion",
-  },
-  {
-    question: "Dessiner ou Écrire ?",
-    option1: "Dessiner",
-    option2: "Écrire",
   },
 ];
 const answeredQuestionsIndices = [];
